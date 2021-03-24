@@ -1,0 +1,14 @@
+prefix=/work/mm_jiamin.zhu/asm/source/vendor/oplus/multimedia/mmserver/oplusmedia/libffmpeg_utils/ffmpeg_cm_14_1/android/armv7-a
+exec_prefix=${prefix}
+libdir=/work/mm_jiamin.zhu/asm/source/vendor/oplus/multimedia/mmserver/oplusmedia/libffmpeg_utils/ffmpeg_cm_14_1/android/armv7-a/lib
+includedir=/work/mm_jiamin.zhu/asm/source/vendor/oplus/multimedia/mmserver/oplusmedia/libffmpeg_utils/ffmpeg_cm_14_1/android/armv7-a/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 5.5.100
+Requires: 
+Requires.private: libavutil >= 56.31.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}
